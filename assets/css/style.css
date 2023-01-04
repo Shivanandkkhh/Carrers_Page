@@ -1,0 +1,498 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    /* background-color: #E5E5E5; */
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+:root {
+    /*  */
+    --font-w-700: 700;
+    --font-w-600: 600;
+    --font-w-500: 500;
+    /*font-sizes  */
+    --font-s-70: 70px;
+    --font-s-40: 40px;
+    --font-s-22: 22px;
+    --font-s-25: 25px;
+    --font-s-20: 20px;
+    --font-s-18: 18px;
+    /*line-hight  */
+    --line-h-105: 105px;
+    --line-h-60: 60px;
+    --line-h-33: 33px;
+    --line-h-8: 8.1;
+    --line-h-38px: 38px;
+    --line-h-30px: 30px;
+    --line-h-27px: 27px;
+    /*  */
+    --letter-s-0em: 0em;
+    /*width  */
+    --width-1206: 1206px;
+    --width-100: 100%;
+    --width-50p: 50%;
+    --width-80p: 80%;
+    /*margin-top */
+    --margin-top-45px: 45px;
+    --margin-top-41px: 41px;
+    --margin-top-85px: 85px;
+    --margin-top-50px: 50px;
+    --margin-top-37px: 37px;
+    --margin-top-69px: 69px;
+    --margin-top-60px: 60px;
+    /*margin-btm*/
+    --margin-btm-88px: 88px;
+    --margin-btm-75px: 75px;
+    /*padding-top */
+    --padding-top-66px: 66px;
+    --padding-60px: 60px;
+    --padding-top-56px: 56px;
+    --padding-top-30px: 30px;
+    /* padding-btm */
+    --padding-btm-88px: 88px;
+    /* color */
+    --color-ffff: #ffff;
+    --color-0000: #000000;
+    --color-7E7E7E: #7E7E7E;
+    --color-D9D9D9: #D9D9D9;
+    /* backgground color */
+    --color-ED4E08: #ED4E08;
+    /* btn padding */
+    --btn-padding: 21.5px 43px;
+    /* border-radius */
+    --border-r-10px: 10px;
+
+}
+
+/* the contaiber stars here */
+.container {
+    max-width: var(--width-1206);
+    margin: 0 auto;
+}
+
+/* the first section starts from here */
+/* the logo design starts here */
+.logo {
+    margin-top: var(--margin-top-45px);
+}
+
+/* the logo design ends here */
+/* the felx-items starts from here */
+
+.flex-items {
+    display: flex;
+    align-items: center;
+    width: var(--width-100);
+}
+
+/* the flex of design content */
+.design-content {
+    width: 55%;
+}
+
+.design-heading {
+    font-size: var(--font-s-70);
+    line-height: var(--line-h-105);
+}
+
+.margin-top-85 {
+    margin-top: var(--margin-top-85px);
+}
+
+.font-w-700 {
+    font-weight: var(--font-w-700);
+}
+
+.letter-s-0em {
+    letter-spacing: var(--letter-s-0em);
+}
+
+.line-h-60 {
+    line-height: var(--line-h-60);
+}
+
+.font-s-40 {
+    font-size: var(--font-s-40);
+}
+
+.line-h-33 {
+    line-height: var(--line-h-33);
+}
+
+.font-w-600 {
+    font-weight: var(--font-w-600);
+}
+
+.design-content a {
+    line-height: var(--line-h-8);
+    padding: var(--btn-padding);
+}
+
+.text-de-none {
+    text-decoration: none;
+}
+
+.border-r-10 {
+    border-radius: var(--border-r-10px);
+}
+
+.font-s-25 {
+    font-size: var(--font-s-25);
+}
+
+.color-fff {
+    color: var(--color-ffff);
+}
+
+.margin-top-60 {
+    margin-top: var(--padding-60px);
+}
+
+.bg-color-ED4EE08 {
+    background-color: var(--color-ED4E08);
+}
+
+/* the felx-items starts ends here */
+/* the flex items grid imagies starts from here */
+.grid-imagies {
+    width: var(--width-50p);
+}
+
+.grid-imagies img {
+    width: var(--width-80p);
+    margin-left: 100px;
+}
+
+/* the flex items grid imagies ends here */
+
+/* the Shoptrade infomation starts from here */
+.section_second {
+    width: var(--width-100);
+}
+
+/* the what is shoptrade */
+.padding-t-66 {
+    padding-top: var(--padding-top-66px);
+}
+
+.font-w-500 {
+    font-weight: var(--font-w-500);
+}
+
+.font-s-22 {
+    font-size: var(--font-s-22);
+}
+
+.line-h-38 {
+    line-height: var(--line-h-38px);
+}
+
+.padding-top-56 {
+    padding-top: var(--padding-top-56px);
+}
+
+.padding-btm-56 {
+    padding-bottom: var(--padding-top-56px);
+}
+
+.margin-top-41 {
+    margin-top: var(--margin-top-41px);
+}
+
+.padding-btm-88 {
+    padding-bottom: var(--padding-btm-88px);
+}
+
+/* about us border-btm */
+.about-us {
+    text-decoration: underline #fff;
+}
+
+.about-us:hover {
+    text-decoration: none;
+}
+
+.margin-top-50 {
+    margin-top: var(--margin-top-50px);
+}
+
+.padding-top-50 {
+    padding-top: var(--margin-top-50px);
+}
+
+.font-s-20 {
+    font-size: var(--font-s-20);
+}
+
+.line-h-30 {
+    line-height: var(--line-h-30px);
+}
+
+.margin-top-37 {
+    margin-top: var(--margin-top-37px);
+}
+
+.color-0000 {
+    color: var(--color-0000);
+}
+
+/* the Shoptrade infomation ends from here */
+/* the designing of jobs section starts from here */
+.jobs-btn a {
+    border-radius: 10px;
+    padding: 20px 61.4px;
+    line-height: var(--line-h-8);
+    /* margin-right: var(--margin-top-85px); */
+}
+
+.active-shadow {
+    box-shadow: 0px 2px 4px 1px #39393924
+}
+
+/* the designing of jobs section ends from here */
+/* the grid posts starts form here */
+.grid-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 51px;
+}
+
+.grid-posts .post {
+    width: 351px;
+    border-radius: 10px;
+    height: 145px;
+    background-color: #F8F8F8;
+}
+.postname1 {
+    /* position: absolute; */
+    width: calc(100% - 200px);
+}
+.post h5 {
+    padding: 20px 0 0 29px;
+    font-weight: var(--font-w-500);
+    line-height: var(--line-h-30px);
+    font-size: var(--font-s-20);
+}
+
+.post p {
+    padding: 17px 0 0 29px;
+    font-weight: var(--font-w-500);
+    font-size: var(--font-s-18);
+    line-height: var(--line-h-27px);
+    color: #7E7E7E;
+}
+
+.post h6 {
+    padding: 47px 0 0 29px;
+    font-weight: var(--font-w-500);
+    font-size: var(--font-s-18);
+    line-height: var(--line-h-27px);
+    color: var(--color-7E7E7E);
+}
+
+.color-active-ED4E08 {
+    color: var(--color-ffff);
+    background-color: var(--color-ED4E08) !important;
+}
+
+.color-active-ED4E08 p {
+    color: var(--color-ffff);
+}
+
+.bg-0000 {
+    background-color: var(--color-0000);
+}
+
+.black-color {
+    color: var(--color-0000);
+}
+
+/* the grid posts ends form here */
+
+/* The shoptrade features strats from here */
+.grid-svg-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 77px;
+    row-gap: 42px;
+    margin-top: var(--margin-top-69px);
+}
+
+.grid-svg h6 {
+    color: var(--color-ffff);
+    font-weight: var(--font-w-600);
+    font-size: var(--font-s-22);
+    line-height: var(--line-h-33);
+    line-height: 2;
+}
+
+.grid-svg p {
+    font-weight: var(--font-w-500);
+    font-size: var(--font-s-18);
+    line-height: var(--line-h-27px);
+    color: var(--color-D9D9D9);
+    padding-bottom: var(--padding-60px);
+}
+
+.m-top-4 {
+    margin-top: 10px;
+}
+
+.m-top-3 {
+    margin-top: 7px;
+}
+
+/* The shoptrade features ends from here */
+/* the contact section starts from here */
+.text-center {
+    text-align: center;
+}
+
+.margin-top-56 {
+    margin-top: var(--padding-top-56px);
+}
+
+.margin-top-60 {
+    margin-top: var(--margin-top-60px);
+}
+
+.padding-top-30px {
+    padding-top: var(--padding-top-30px);
+}
+
+.border-r-60 {
+    border-radius: var(--font-s-20);
+}
+
+.margin-btm-75 {
+    margin-bottom: var(--margin-btm-75px);
+}
+
+/* the contact section ends from here */
