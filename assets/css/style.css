@@ -571,7 +571,14 @@ table {
 
 /* @Media screen 980 ends from here */
 /* @Media screen 768 starts from here */
-@media screen and (max-width:768px) {}
+@media screen and (max-width:768px) {
+    .jobs-btn{
+        flex-direction: column;
+    }
+    .btn-3 a{
+        margin-left: 30px;
+    }
+}
 
 /* @Media screen 768 ends from here */
 /* @Media screen 520  starts from here */
@@ -602,7 +609,9 @@ table {
     .section_second {
         margin-top: var(--margin-top-45px);
     }
-
+    .jobs-btn a{
+        margin-right: var(--font-s-20);
+    }
     .what-is {
         font-size: var(--font-s-20);
         padding-top: var(--padding-top-30px);
@@ -629,9 +638,7 @@ table {
         font-size: var(--font-s-15);
         line-height: var(--line-h-22px);
     }
-    .jobs-btn{
-        flex-direction: column;
-    }
+    
     .carrer-text {
         margin-top: var(--font-s-15);
     }
