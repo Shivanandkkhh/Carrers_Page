@@ -411,6 +411,7 @@ table {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 65px;
     row-gap: 51px;
+    margin-top: var(--font-s-18);
 }
 
 .grid-posts .post {
@@ -472,7 +473,6 @@ table {
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     column-gap: 74px;
-    row-gap: 42px;
     margin-top: var(--margin-top-69px);
 }
 
