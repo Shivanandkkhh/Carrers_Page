@@ -99,14 +99,13 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+    /* display: block; */
 }
 
 body {
     line-height: 1;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    /* background-color: #E5E5E5; */
 }
 
 ol,
@@ -144,6 +143,8 @@ table {
     --font-s-25: 25px;
     --font-s-20: 20px;
     --font-s-18: 18px;
+    --font-s-15: 15px;
+    --font-s-14: 14px;
     /*line-hight  */
     --line-h-105: 105px;
     --line-h-60: 60px;
@@ -152,10 +153,12 @@ table {
     --line-h-38px: 38px;
     --line-h-30px: 30px;
     --line-h-27px: 27px;
+    --line-h-22px: 22px;
+    --line-h-21px: 21px;
     /*  */
     --letter-s-0em: 0em;
     /*width  */
-    --width-1206: 1206px;
+    --width-1206: 1238px;
     --width-100: 100%;
     --width-50p: 50%;
     --width-80p: 80%;
@@ -167,6 +170,8 @@ table {
     --margin-top-37px: 37px;
     --margin-top-69px: 69px;
     --margin-top-60px: 60px;
+    --margin-top-30px: 30px;
+    --margin-top-10px: 10px;
     /*margin-btm*/
     --margin-btm-88px: 88px;
     --margin-btm-75px: 75px;
@@ -197,6 +202,10 @@ table {
     margin: 0 auto;
 }
 
+.margin-l-r {
+    margin: 0 20px;
+}
+
 /* the first section starts from here */
 /* the logo design starts here */
 .logo {
@@ -214,7 +223,19 @@ table {
 
 /* the flex of design content */
 .design-content {
-    width: 55%;
+    width: 45%;
+}
+
+.grid-imagies {
+    /* width: var(--width-50p); */
+    width: 50%;
+
+}
+
+.grid-imagies img {
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
 }
 
 .design-heading {
@@ -251,7 +272,8 @@ table {
 }
 
 .design-content a {
-    line-height: var(--line-h-8);
+    /* line-height: var(--line-h-8); */
+    line-height: 6;
     padding: var(--btn-padding);
 }
 
@@ -281,14 +303,9 @@ table {
 
 /* the felx-items starts ends here */
 /* the flex items grid imagies starts from here */
-.grid-imagies {
-    width: var(--width-50p);
-}
 
-.grid-imagies img {
-    width: var(--width-80p);
-    margin-left: 100px;
-}
+
+
 
 /* the flex items grid imagies ends here */
 
@@ -365,14 +382,21 @@ table {
 
 /* the Shoptrade infomation ends from here */
 /* the designing of jobs section starts from here */
+.jobs-btn {
+    /* display: grid;*/
+    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  */
+    display: flex;
+
+}
+
 .jobs-btn a {
     border-radius: 10px;
-    padding: 20px 61.4px;
     line-height: var(--line-h-8);
-    /* margin-right: var(--margin-top-85px); */
+    margin-right: 77px;
 }
 
 .active-shadow {
+    padding: 20px 61.4px;
     box-shadow: 0px 2px 4px 1px #39393924
 }
 
@@ -381,19 +405,22 @@ table {
 .grid-posts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 65px;
     row-gap: 51px;
 }
 
 .grid-posts .post {
-    width: 351px;
     border-radius: 10px;
     height: 145px;
     background-color: #F8F8F8;
 }
-.postname1 {
-    /* position: absolute; */
+
+/* .postname1 {
+    position: absolute;
     width: calc(100% - 200px);
-}
+} */
+
 .post h5 {
     padding: 20px 0 0 29px;
     font-weight: var(--font-w-500);
@@ -440,7 +467,8 @@ table {
 .grid-svg-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 77px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 74px;
     row-gap: 42px;
     margin-top: var(--margin-top-69px);
 }
@@ -496,3 +524,171 @@ table {
 }
 
 /* the contact section ends from here */
+
+/* @Media screen 1020 starts from here */
+@media screen and (max-width:1020px) {}
+
+/* @Media screen 1020 ends from here */
+/* @Media screen 980 starts from here */
+@media screen and (max-width:980px) {
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .padding-14 {
+        padding: 0 14px;
+    }
+
+    .flex-items {
+        flex-direction: column-reverse;
+    }
+
+    .design-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    .margin-top-30 {
+        margin-top: var(--margin-top-30px);
+    }
+
+    .grid-imagies {
+        /* width: var(--width-50p); */
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .grid-imagies img {
+        margin-left: 0;
+    }
+}
+
+/* @Media screen 980 ends from here */
+/* @Media screen 768 starts from here */
+@media screen and (max-width:768px) {}
+
+/* @Media screen 768 ends from here */
+/* @Media screen 520  starts from here */
+@media screen and (max-width:520px) {
+    .logo{
+        margin-top:var(--line-h-27px);
+    }
+    .design-heading {
+        font-size: var(--font-s-40);
+        line-height: var(--line-h-60);
+    }
+
+    .Design-commerce {
+        font-size: var(--font-s-25);
+        line-height: var(--line-h-38px);
+    }
+
+    .margin-top-37 {
+        margin-top: 10px;
+    }
+
+    .option {
+        font-size: var(--font-s-15);
+        line-height: var(--line-h-27px);
+    }
+
+    /* second section starts here */
+    .section_second {
+        margin-top: var(--margin-top-45px);
+    }
+
+    .what-is {
+        font-size: var(--font-s-20);
+        padding-top: var(--padding-top-30px);
+        line-height: 0;
+    }
+
+    .about-us {
+        padding-bottom: var(--padding-top-30px);
+        margin-top: var(--border-r-10px);
+    }
+
+    .about-shoptrade {
+        margin-top: var(--font-s-20);
+    }
+
+    .about-shoptrade,
+    .about-us,
+    .carrer-text,
+    .we-are-hire,
+    .text-de-none,
+    .post h5,
+    .grid-svg p,
+    .Design-text {
+        font-size: var(--font-s-15);
+        line-height: var(--line-h-22px);
+    }
+    .jobs-btn{
+        flex-direction: column;
+    }
+    .carrer-text {
+        margin-top: var(--font-s-15);
+    }
+
+    .carrer-heading,
+    .why-shoptrade,
+    .lets-hear {
+        font-size: var(--font-s-20);
+        line-height: var(--line-h-30px);
+    }
+
+    .third-section {
+        margin-top: var(--font-s-20);
+    }
+
+    .fourth-section {
+        margin-top: var(--margin-top-10px);
+    }
+
+    .post p,
+    .find-anything {
+        font-size: var(--font-s-14);
+        line-height: var(--line-h-21px);
+    }
+
+    .grid-svg h6 {
+        font-size: var(--font-s-18);
+        line-height: var(--line-h-27px);
+    }
+
+    .we-cant {
+        font-size: var(--font-s-25);
+        line-height: var(--line-h-38px);
+    }
+
+    .grid-posts {
+        row-gap: var(--font-s-20);
+    }
+
+    .fifth-section {
+        margin-top: var(--line-h-30px);
+    }
+
+    .why-shoptrade {
+        padding-top: var(--font-s-25);
+    }
+
+    .grid-svg-container {
+        row-gap: 0;
+        margin-top:var(--font-s-40) ;
+    }
+    .lets-hear{
+        margin-top: var(--line-h-30px);
+    }
+    .we-cant{
+        padding-top: var(--line-h-27px);
+    }
+    .find-anything{
+        padding-bottom: var(--line-h-27px);
+    }
+}
+
+/* @Media screen 520 ends from here */
