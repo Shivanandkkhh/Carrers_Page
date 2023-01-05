@@ -132,7 +132,7 @@ table {
 }
 
 :root {
-    /*  */
+    /*font -weights  */
     --font-w-700: 700;
     --font-w-600: 600;
     --font-w-500: 500;
@@ -155,10 +155,10 @@ table {
     --line-h-27px: 27px;
     --line-h-22px: 22px;
     --line-h-21px: 21px;
-    /*  */
+    /*letter spacing  */
     --letter-s-0em: 0em;
     /*width  */
-    --width-1206: 1238px;
+    --width-1238: 1238px;
     --width-100: 100%;
     --width-50p: 50%;
     --width-80p: 80%;
@@ -172,6 +172,8 @@ table {
     --margin-top-60px: 60px;
     --margin-top-30px: 30px;
     --margin-top-10px: 10px;
+    /* margin right */
+    --margin-right-77px:77px;
     /*margin-btm*/
     --margin-btm-88px: 88px;
     --margin-btm-75px: 75px;
@@ -182,23 +184,27 @@ table {
     --padding-top-30px: 30px;
     /* padding-btm */
     --padding-btm-88px: 88px;
-    /* color */
+    /* colors*/
     --color-ffff: #ffff;
     --color-0000: #000000;
     --color-7E7E7E: #7E7E7E;
     --color-D9D9D9: #D9D9D9;
-    /* backgground color */
     --color-ED4E08: #ED4E08;
     /* btn padding */
     --btn-padding: 21.5px 43px;
     /* border-radius */
     --border-r-10px: 10px;
+    /* Gird-Gaps */
+    --gap-65: 65px;
+    --gap-74:74px;
+    /* height */
+    --height-145px:145px;
 
 }
 
 /* the contaiber stars here */
 .container {
-    max-width: var(--width-1206);
+    max-width: var(--width-1238);
     margin: 0 auto;
 }
 
@@ -379,7 +385,8 @@ table {
 .color-0000 {
     color: var(--color-0000);
 }
-.carrer-text{
+
+.carrer-text {
     margin-top: var(--font-s-15);
 }
 
@@ -393,9 +400,10 @@ table {
 }
 
 .jobs-btn a {
-    border-radius: 10px;
+    border-radius: var(--border-r-10px);
     line-height: var(--line-h-8);
-    margin-right: 77px;
+    margin-right: var(--margin-right-77px) ;
+
 }
 
 .active-shadow {
@@ -409,14 +417,14 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    column-gap: 65px;
-    row-gap: 51px;
+    column-gap:var(--gap-65) ;
+    row-gap: var(--margin-top-50px);
     margin-top: var(--font-s-18);
 }
 
 .grid-posts .post {
-    border-radius: 10px;
-    height: 145px;
+    border-radius: var(--border-r-10px);
+    height: var(--height-145px);
     background-color: #F8F8F8;
 }
 
@@ -493,7 +501,7 @@ table {
 }
 
 .m-top-4 {
-    margin-top: 10px;
+    margin-top: var(--margin-top-10px);
 }
 
 .m-top-3 {
@@ -572,10 +580,11 @@ table {
 /* @Media screen 980 ends from here */
 /* @Media screen 768 starts from here */
 @media screen and (max-width:768px) {
-    .jobs-btn{
+    .jobs-btn {
         flex-direction: column;
     }
-    .btn-3 a{
+
+    .btn-3 a {
         margin-left: 30px;
     }
 }
@@ -583,9 +592,10 @@ table {
 /* @Media screen 768 ends from here */
 /* @Media screen 520  starts from here */
 @media screen and (max-width:520px) {
-    .logo{
-        margin-top:var(--line-h-27px);
+    .logo {
+        margin-top: var(--line-h-27px);
     }
+
     .design-heading {
         font-size: var(--font-s-40);
         line-height: var(--line-h-60);
@@ -609,9 +619,11 @@ table {
     .section_second {
         margin-top: var(--margin-top-45px);
     }
-    .jobs-btn a{
+
+    .jobs-btn a {
         margin-right: var(--font-s-20);
     }
+
     .what-is {
         font-size: var(--font-s-20);
         padding-top: var(--padding-top-30px);
@@ -638,7 +650,7 @@ table {
         font-size: var(--font-s-15);
         line-height: var(--line-h-22px);
     }
-    
+
     .carrer-text {
         margin-top: var(--font-s-15);
     }
@@ -688,15 +700,18 @@ table {
 
     .grid-svg-container {
         row-gap: 0;
-        margin-top:var(--font-s-40) ;
+        margin-top: var(--font-s-40);
     }
-    .lets-hear{
+
+    .lets-hear {
         margin-top: var(--line-h-30px);
     }
-    .we-cant{
+
+    .we-cant {
         padding-top: var(--line-h-27px);
     }
-    .find-anything{
+
+    .find-anything {
         padding-bottom: var(--line-h-27px);
     }
 }
