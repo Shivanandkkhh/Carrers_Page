@@ -379,6 +379,9 @@ table {
 .color-0000 {
     color: var(--color-0000);
 }
+.carrer-text{
+    margin-top: var(--font-s-15);
+}
 
 /* the Shoptrade infomation ends from here */
 /* the designing of jobs section starts from here */
