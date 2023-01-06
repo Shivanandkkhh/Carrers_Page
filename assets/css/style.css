@@ -474,6 +474,7 @@ table {
 /* job posts active block */
 .all-posts{
     min-height: 451px;
+    margin-top: 51px;
 }
 .tablinks{
     margin-left: 30px;
@@ -919,7 +920,9 @@ table {
         font-size: 13px;
         line-height: 19.5px;
     }
-
+    .all-posts{
+        margin-top: 30px;
+    }
     .flex-between {
         margin-left: 30%;
     }
