@@ -445,23 +445,32 @@ table {
 /* the designing of jobs section starts from here */
 .jobs-btn {
     display: flex;
+    width: 50%;
+    /* justify-content: space-between; */
     margin-top: 20px;
     cursor: pointer;
 }
 
 .jobs-btn1-2 {
     display: flex;
+    width: 70%;
+    /* justify-content: space-between; */
 }
-
+.design-2{
+    margin-left: 100px;
+}
+.tablinks{
+    /* padding: 0 30px; */
+}
 .jobs-btn p {
     border-radius: var(--border-r-10px);
     line-height: 5;
-    margin-right: var(--margin-right-77px);
+    /* margin-right: var(--margin-right-77px); */
 
 }
 
 .active {
-    padding: 0px 61.4px;
+    /* padding: 0px 61.4px; */
     box-shadow: 0px 2px 4px 1px #39393924
 }
 
@@ -476,12 +485,11 @@ table {
     min-height: 340px;
     margin-top: 51px;
 }
-.tablinks{
-    margin-left: 30px;
-}
- .active.tablinks{
+
+
+ /* .active.tablinks{
     margin-left: 0px;
-}
+} */
 .position-grid{
     display: none;
 }
@@ -590,7 +598,9 @@ table {
     color: var(--color-D9D9D9);
     padding-bottom: var(--padding-60px);
 }
-
+.tablinks{
+    padding: 0 20px;
+}
 .m-top-4 {
     margin-top: var(--margin-top-10px);
 }
@@ -761,6 +771,9 @@ table {
     .test-1 {
         width: 100%;
     }
+    .jobs-btn {
+        width: 100% !important;
+    }
 }
 
 /* @Media screen 980 ends from here */
@@ -769,7 +782,9 @@ table {
     .jobs-btn {
         flex-direction: column;
     }
-
+    .jobs-btn1-2 {
+        justify-content: space-between;
+    }
     /* .btn-3 {
         margin-left: 30px;
     } */
@@ -932,9 +947,13 @@ table {
     .jobs-btn1-2 {
         justify-content: space-between;
     }
-    .active {
-        padding: 0px 30px;
+    .jobs-btn1-2{
+        width: 100%;
     }
+    /* .active {
+        padding: 0px 30px;
+    } */
+    
     /* .btn-3:active{
         margin-left: 0px !important;
     } */
