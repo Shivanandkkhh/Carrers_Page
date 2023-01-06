@@ -173,7 +173,7 @@ table {
     --margin-top-30px: 30px;
     --margin-top-10px: 10px;
     /* margin right */
-    --margin-right-77px:77px;
+    --margin-right-77px: 77px;
     /*margin-btm*/
     --margin-btm-88px: 88px;
     --margin-btm-75px: 75px;
@@ -196,9 +196,9 @@ table {
     --border-r-10px: 10px;
     /* Gird-Gaps */
     --gap-65: 65px;
-    --gap-74:74px;
+    --gap-74: 74px;
     /* height */
-    --height-145px:145px;
+    --height-145px: 145px;
 
 }
 
@@ -249,6 +249,57 @@ table {
     line-height: var(--line-h-105);
 }
 
+.option {
+    background-color: #ED4E08;
+    color: #fff;
+    border: 2px solid #ED4E08;
+}
+
+.option:hover {
+    color: #ED4E08;
+    background-color: #fff;
+    border: 2px solid #ED4E08;
+}
+
+/* .option span{
+    transform: all 2s;
+}
+.option span:hover{
+    width: 300px;
+    color: green;
+} */
+.option span:hover {
+    transition: background-color 1s ease-in-out 2s;
+}
+
+.option span:hover {
+    position: relative;
+    animation-name: move-forword;
+    animation-duration: 8s;
+    animation-iteration-count: 2;
+    /* animation-delay: 1s; */
+    animation-timing-function: 2s;
+}
+
+@keyframes move-forword {
+    0% {
+        top: 200px;
+    }
+
+    50% {
+        top: 20px;
+    }
+
+    /* from {
+        width: 200px;
+    }
+
+    to {
+        width: 1400px;
+    } */
+
+}
+
 .margin-top-85 {
     margin-top: var(--margin-top-85px);
 }
@@ -265,6 +316,10 @@ table {
     line-height: var(--line-h-60);
 }
 
+.font-s-18 {
+    font-size: 18px;
+}
+
 .font-s-40 {
     font-size: var(--font-s-40);
 }
@@ -275,6 +330,15 @@ table {
 
 .font-w-600 {
     font-weight: var(--font-w-600);
+}
+
+.font-w-400 {
+    font-weight: 400;
+    color: #7E7E7E;
+}
+
+.font-s-16 {
+    font-size: 16px;
 }
 
 .design-content a {
@@ -356,6 +420,7 @@ table {
 /* about us border-btm */
 .about-us {
     text-decoration: underline #fff;
+    cursor: pointer;
 }
 
 .about-us:hover {
@@ -386,6 +451,11 @@ table {
     color: var(--color-0000);
 }
 
+/* grid postst */
+/* .post:hover {
+    background-color: #ED4E08;
+} */
+
 .carrer-text {
     margin-top: var(--font-s-15);
 }
@@ -393,22 +463,28 @@ table {
 /* the Shoptrade infomation ends from here */
 /* the designing of jobs section starts from here */
 .jobs-btn {
-    /* display: grid;*/
-    /* grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));  */
     display: flex;
-
+    margin-top: 20px;
+    cursor: pointer;
+}
+.jobs-btn1-2{
+    display: flex;
 }
 
-.jobs-btn a {
+.jobs-btn p{
     border-radius: var(--border-r-10px);
-    line-height: var(--line-h-8);
-    margin-right: var(--margin-right-77px) ;
+    line-height: 5;
+    margin-right: var(--margin-right-77px);
 
 }
 
 .active-shadow {
-    padding: 20px 61.4px;
+    padding: 0px 61.4px;
     box-shadow: 0px 2px 4px 1px #39393924
+}
+
+.color-gery {
+    color: #c61f1f(0, 0, 0, 0.7)
 }
 
 /* the designing of jobs section ends from here */
@@ -417,7 +493,7 @@ table {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    column-gap:var(--gap-65) ;
+    column-gap: var(--gap-65);
     row-gap: var(--margin-top-50px);
     margin-top: var(--font-s-18);
 }
@@ -427,7 +503,13 @@ table {
     height: var(--height-145px);
     background-color: #F8F8F8;
 }
-
+.grid-posts .post:hover{
+    background-color: #ED4E08;
+    color: #fff;
+}
+.post-location:hover{
+    color: #fff;
+}
 /* .postname1 {
     position: absolute;
     width: calc(100% - 200px);
@@ -446,6 +528,10 @@ table {
     font-size: var(--font-s-18);
     line-height: var(--line-h-27px);
     color: #7E7E7E;
+}
+
+.line-h-27 {
+    line-height: 27px;
 }
 
 .post h6 {
@@ -469,8 +555,13 @@ table {
     background-color: var(--color-0000);
 }
 
-.black-color {
+.black-color a {
     color: var(--color-0000);
+}
+
+.black-color a:hover {
+    color: rgb(16, 16, 222);
+    cursor: pointer;
 }
 
 /* the grid posts ends form here */
@@ -509,7 +600,82 @@ table {
 }
 
 /* The shoptrade features ends from here */
+/*  */
+.testimonial {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.test-1,
+.test-2 {
+    width: 46.5%;
+    min-height: 337px;
+    background-color: #F8F8F8;
+    border-radius: 20px;
+
+}
+
+.margin-center {
+    margin: 0 15px;
+}
+
+.margin-top-28 {
+    margin-top: 28px;
+}
+
+.font-s-italic {
+    font-style: italic;
+}
+
+.info {
+    display: flex;
+    margin-top: 13%;
+}
+
+
+.info1 {
+    display: flex;
+    margin-top: 7.9%;
+}
+
+.name-margin {
+    margin: 20px 0 0 15px;
+    line-height: 2;
+}
+
+.flex-between {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.location-margin {
+    margin: 7% 3% 0 0;
+    float: right;
+}
+
+.location-margin span {
+    color: #7E7E7E;
+}
+
+.locations-margin span {
+    color: #7E7E7E;
+}
+
+.locations-margin {
+    margin: 9% 3% 0 0;
+    float: right;
+}
+
+/*  */
 /* the contact section starts from here */
+.contact {
+    border-radius: 10px;
+}
+
 .text-center {
     text-align: center;
 }
@@ -526,12 +692,24 @@ table {
     padding-top: var(--padding-top-30px);
 }
 
-.border-r-60 {
+testimonial .border-r-60 {
     border-radius: var(--font-s-20);
 }
 
 .margin-btm-75 {
     margin-bottom: var(--margin-btm-75px);
+}
+
+.symbols {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.symbols img {
+    padding-right: 15px;
 }
 
 /* the contact section ends from here */
@@ -567,13 +745,21 @@ table {
 
     .grid-imagies {
         /* width: var(--width-50p); */
-        width: 100%;
+        width: 80%;
         height: auto;
         object-fit: cover;
     }
 
     .grid-imagies img {
         margin-left: 0;
+    }
+
+    .testi-none {
+        display: none;
+    }
+
+    .test-1 {
+        width: 100%;
     }
 }
 
@@ -584,7 +770,7 @@ table {
         flex-direction: column;
     }
 
-    .btn-3 a {
+    .btn-3  {
         margin-left: 30px;
     }
 }
@@ -592,6 +778,11 @@ table {
 /* @Media screen 768 ends from here */
 /* @Media screen 520  starts from here */
 @media screen and (max-width:520px) {
+    .grid-imagies {
+        /* width: var(--width-50p); */
+        width: 100%;
+    }
+
     .logo {
         margin-top: var(--line-h-27px);
     }
@@ -620,7 +811,7 @@ table {
         margin-top: var(--margin-top-45px);
     }
 
-    .jobs-btn a {
+    .jobs-btn p {
         margin-right: var(--font-s-20);
     }
 
@@ -646,7 +837,8 @@ table {
     .text-de-none,
     .post h5,
     .grid-svg p,
-    .Design-text {
+    .Design-text,
+    .name {
         font-size: var(--font-s-15);
         line-height: var(--line-h-22px);
     }
@@ -671,7 +863,9 @@ table {
     }
 
     .post p,
-    .find-anything {
+    .find-anything,
+    .test-text,
+    .Location {
         font-size: var(--font-s-14);
         line-height: var(--line-h-21px);
     }
@@ -714,6 +908,20 @@ table {
     .find-anything {
         padding-bottom: var(--line-h-27px);
     }
+
+    .flex-between {
+        flex-direction: column;
+    }
+
+    .font-s-13 {
+        font-size: 13px;
+        line-height: 19.5px;
+    }
+
+    .flex-between {
+        margin-left: 30%;
+    }
+    
 }
 
 /* @Media screen 520 ends from here */
