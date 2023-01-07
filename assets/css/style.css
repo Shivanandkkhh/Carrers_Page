@@ -260,32 +260,39 @@ table {
     border: 2px solid #ED4E08;
 }
 
-.option .btn-arrow{
+.option .btn-arrow {
     display: inline-block;
     /* transform: translateX(0px); */
     transition: all 0.3s ease-in;
 }
-.about-us .btn-arrow-2{
+
+.about-us .btn-arrow-2 {
     display: inline-block;
     /* transform: translateX(0px); */
     transition: all 0.3s ease-in;
 }
-.option:hover .btn-arrow{
+
+.option:hover .btn-arrow {
     transform: translateX(25px);
 }
-.btn-arrow-2{
+
+.btn-arrow-2 {
     margin-left: 7px;
 }
-.about-us:hover .btn-arrow-2{
+
+.about-us:hover .btn-arrow-2 {
     transform: translateX(25px);
 }
+
 .option:hover .btn-arrow svg path {
     fill: #ed4e08;
     transition: all 0.3s ease-in;
-  }
-  .about-shoptrade{
+}
+
+.about-shoptrade {
     margin-bottom: 40px;
-  }
+}
+
 .margin-top-85 {
     margin-top: var(--margin-top-85px);
 }
@@ -396,7 +403,11 @@ table {
 }
 
 .margin-top-41 {
-    margin-top: var(--margin-top-41px);
+    margin-top: 25px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .padding-btm-88 {
@@ -456,12 +467,15 @@ table {
     width: 70%;
     /* justify-content: space-between; */
 }
-.design-2{
+
+.design-2 {
     margin-left: 100px;
 }
-.tablinks{
+
+.tablinks {
     /* padding: 0 30px; */
 }
+
 .jobs-btn p {
     border-radius: var(--border-r-10px);
     line-height: 5;
@@ -481,23 +495,24 @@ table {
 /* the designing of jobs section ends from here */
 /* the grid posts starts form here */
 /* job posts active block */
-.all-posts{
+.all-posts {
     min-height: 340px;
     margin-top: 51px;
 }
 
 
- /* .active.tablinks{
+/* .active.tablinks{
     margin-left: 0px;
 } */
-.position-grid{
+.position-grid {
     display: none;
 }
-.tab-content-active{
+
+.tab-content-active {
     display: block;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     column-gap: var(--gap-65);
     row-gap: var(--margin-top-50px);
     margin-top: var(--font-s-18);
@@ -505,19 +520,21 @@ table {
 
 
 /*  */
- .post {
+.post {
     border-radius: var(--border-r-10px);
     height: var(--height-145px);
     background-color: #F8F8F8;
 }
 
-.post:hover{
+.post:hover {
     background-color: #ED4E08;
     color: #fff;
 }
-.post:hover .post-location{
+
+.post:hover .post-location {
     color: #fff;
 }
+
 /* .postname1 {
     position: absolute;
     width: calc(100% - 200px);
@@ -537,6 +554,7 @@ table {
     line-height: var(--line-h-27px);
     color: #7E7E7E;
 }
+
 /*  */
 .line-h-27 {
     line-height: 27px;
@@ -578,7 +596,7 @@ table {
 .grid-svg-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     column-gap: 54px;
     margin-top: var(--margin-top-69px);
 }
@@ -594,13 +612,16 @@ table {
 .grid-svg p {
     font-weight: var(--font-w-500);
     font-size: var(--font-s-18);
+    margin-top: 20px;
     line-height: var(--line-h-27px);
     color: var(--color-D9D9D9);
     padding-bottom: var(--padding-60px);
 }
-.tablinks{
+
+.tablinks {
     padding: 0 20px;
 }
+
 .m-top-4 {
     margin-top: var(--margin-top-10px);
 }
@@ -718,6 +739,7 @@ table {
     cursor: pointer;
 }
 
+
 .symbols img {
     padding-right: 15px;
 }
@@ -771,6 +793,7 @@ table {
     .test-1 {
         width: 100%;
     }
+
     .jobs-btn {
         width: 100% !important;
     }
@@ -782,9 +805,16 @@ table {
     .jobs-btn {
         flex-direction: column;
     }
+
+    .btn-3 {
+        width: 40%;
+    }
+
     .jobs-btn1-2 {
         justify-content: space-between;
+        width: 80%;
     }
+
     /* .btn-3 {
         margin-left: 30px;
     } */
@@ -793,10 +823,6 @@ table {
 /* @Media screen 768 ends from here */
 /* @Media screen 520  starts from here */
 @media screen and (max-width:520px) {
-    .grid-imagies {
-        /* width: var(--width-50p); */
-        width: 100%;
-    }
 
     .logo {
         margin-top: var(--line-h-27px);
@@ -826,9 +852,9 @@ table {
         margin-top: var(--margin-top-45px);
     }
 
-    .jobs-btn p {
+    /* .jobs-btn p {
         margin-right: var(--font-s-20);
-    }
+    } */
 
     .what-is {
         font-size: var(--font-s-20);
@@ -895,9 +921,11 @@ table {
         font-size: var(--font-s-25);
         line-height: var(--line-h-38px);
     }
+
     .padding-btm-88 {
         padding-bottom: 32px;
     }
+
     .grid-posts {
         row-gap: var(--font-s-20);
     }
@@ -935,28 +963,51 @@ table {
         font-size: 13px;
         line-height: 19.5px;
     }
-    .all-posts{
+
+    .all-posts {
         margin-top: 30px;
     }
+
     .flex-between {
         margin-left: 30%;
     }
+
     .tablinks {
         margin-left: 0px !important;
     }
+
     .jobs-btn1-2 {
         justify-content: space-between;
-    }
-    .jobs-btn1-2{
         width: 100%;
     }
-    .testimonial{
+
+    .testimonial {
         margin-top: 25px;
+    }
+
+    .btn-3 {
+        width: 80%;
+    }
+
+    .name-margin {
+        margin: 20px 2px 0 0px;
+        line-height: 2;
+    }
+
+    .test-1,
+    .test-2 {
+        min-height: 212px;
+    }
+    .design-content a {
+        padding: 14.5px 17.5px;
+    }
+    .option:hover .btn-arrow {
+        transform: translateX(13px);
     }
     /* .active {
         padding: 0px 30px;
     } */
-    
+
     /* .btn-3:active{
         margin-left: 0px !important;
     } */
