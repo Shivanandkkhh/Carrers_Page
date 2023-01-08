@@ -827,6 +827,10 @@ html {
     .logo {
         margin-top: var(--line-h-27px);
     }
+    .logo img{
+        width: 185px;
+        height: 46px;
+    }
 
     .design-heading {
         font-size: var(--font-s-40);
@@ -852,9 +856,7 @@ html {
         margin-top: var(--margin-top-45px);
     }
 
-    /* .jobs-btn p {
-        margin-right: var(--font-s-20);
-    } */
+  
 
     .what-is {
         font-size: var(--font-s-20);
