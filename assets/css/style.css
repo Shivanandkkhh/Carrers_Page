@@ -746,10 +746,6 @@ html {
 
 /* the contact section ends from here */
 
-/* @Media screen 1020 starts from here */
-@media screen and (max-width:1020px) {}
-
-/* @Media screen 1020 ends from here */
 /* @Media screen 980 starts from here */
 @media screen and (max-width:980px) {
     .logo {
@@ -837,9 +833,11 @@ html {
         line-height: var(--line-h-60);
     }
 
+
     .Design-commerce {
         font-size: var(--font-s-25);
         line-height: var(--line-h-38px);
+        margin-top: 10px;
     }
 
     .margin-top-37 {
