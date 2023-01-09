@@ -15,7 +15,7 @@ for (let i = 0; i < tabs.length; i++) {
     })
 }
 
-// Testimonials sliding property?
+// Testimonials sliding property
 
 const tabsTest = document.querySelectorAll('.tablinks');
 const tabcontentTest = document.querySelectorAll('.position-grid');
