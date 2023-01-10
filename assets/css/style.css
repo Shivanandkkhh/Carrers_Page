@@ -218,6 +218,12 @@ table {
     margin-top: var(--margin-top-45px);
 }
 
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 260px;
+}
+
 /* the logo design ends here */
 /* the felx-items starts from here */
 
@@ -409,13 +415,14 @@ html {
 }
 
 /* about us border-btm */
-.about-us {
-    text-decoration: underline #fff;
+.about-us{
     cursor: pointer;
+    border-bottom: 2px solid #fff;
 }
-
+ 
 .about-us:hover {
-    text-decoration: none;
+   border-bottom: 2px solid transparent;
+   transition:all  0.3s ease-in;
 }
 
 .margin-top-50 {
@@ -450,7 +457,7 @@ html {
 /* the designing of jobs section starts from here */
 .jobs-btn {
     display: flex;
-    margin-top: 20px;
+    margin-top: 33px;
     cursor: pointer;
 }
 
@@ -459,16 +466,22 @@ html {
 }
 
 .design-2 {
-    margin-left: 77px;
+    margin-left: 16px;
 }
 
 .engineering-4 {
-    margin-left: 77px;
+    margin-left: 16px;
 }
 
 .jobs-btn p {
     border-radius: var(--border-r-10px);
-    line-height: 5;
+    line-height: 30px;
+    font-size: 20px;
+    width: 194px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* This is box shadow while butttonis active */
@@ -639,16 +652,15 @@ html {
     font-style: italic;
 }
 
-.info {
+.info,.info1 {
     display: flex;
-    margin-top: 13%;
+    /* align-self: flex-end; */
+    align-content: flex-end;
 }
-
-
-.info1 {
+/* .info1 {
     display: flex;
-    margin-top: 7.9%;
-}
+    align-self: flex-end;
+} */
 
 .name-margin {
     margin: 20px 0 0 15px;
@@ -657,27 +669,36 @@ html {
 
 .flex-between {
     display: flex;
+    align-items: center;
     width: 100%;
     justify-content: space-between;
     margin-bottom: 5%;
 }
 
 .location-margin {
-    margin: 7% 3% 0 0;
+    margin: 2% 3% 0 0;
     float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .location-margin span {
     color: #7E7E7E;
+    margin-left: 10px;
 }
 
 .locations-margin span {
     color: #7E7E7E;
+    margin-left: 10px;
 }
 
 .locations-margin {
-    margin: 9% 3% 0 0;
+    margin: 2% 3% 0 0;
     float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*  */
@@ -718,17 +739,35 @@ html {
     cursor: pointer;
 }
 
-.post-width{
+.post-width {
     width: 250px;
 }
+
 .symbols img {
     padding-right: 15px;
+}
+
+.jobs-btn {
+    overflow: auto;
 }
 
 /* the contact section ends from here */
 
 /* @Media screen 980 starts from here */
 @media screen and (max-width:980px) {
+    .grid-imagies {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid-imagies img {
+        max-height: 520px !important;
+        width: 100%;
+        margin-left: 0;
+    }
+
     .logo {
         display: flex;
         align-items: center;
@@ -752,15 +791,6 @@ html {
         margin-top: var(--margin-top-30px);
     }
 
-    .grid-imagies {
-        width: 80%;
-        height: auto;
-        object-fit: cover;
-    }
-
-    .grid-imagies img {
-        margin-left: 0;
-    }
 
     .testi-none {
         display: none;
@@ -778,9 +808,7 @@ html {
 /* @Media screen 980 ends from here */
 /* @Media screen 768 starts from here */
 @media screen and (max-width:768px) {
-    .jobs-btn {
-        flex-direction: column;
-    }
+
 
     .btn-3 {
         width: 40%;
@@ -798,18 +826,28 @@ html {
 /* @Media screen 768 ends from here */
 /* @Media screen 520  starts from here */
 @media screen and (max-width:520px) {
+    .grid-imagies {
+        width: 80%;
+    }
 
     .logo {
         margin-top: var(--line-h-27px);
     }
 
     .logo img {
-        width: 185px;
-        height: 46px;
+        width: 100%;
+        max-width: 185px;
+        height: auto;
+    }
+
+    .grid-imagies img {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
     }
 
     .design-2 {
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     .design-heading {
@@ -835,7 +873,7 @@ html {
 
     /* second section starts here */
     .section_second {
-        margin-top: var(--margin-top-45px);
+        margin-top: 26px;
     }
 
     .what-is {
@@ -862,7 +900,8 @@ html {
     .post h5,
     .grid-svg p,
     .Design-text,
-    .name {
+    .name,
+    .jobs-btn p {
         font-size: var(--font-s-15);
         line-height: var(--line-h-22px);
     }
@@ -938,7 +977,7 @@ html {
     }
 
     .flex-between {
-        flex-direction: column;
+        /* flex-direction: column; */
     }
 
     .post {
@@ -999,6 +1038,16 @@ html {
         font-size: 14px;
         line-height: 21px;
     }
+
+    /* JObs btns */
+    .jobs-btn p {
+        height: 41px;
+        width: 150px;
+    }
+    
+    .post-padding {
+        padding: 10px 0 0 30px !important;
+    }
 }
 
-    /* @Media screen 520 ends from here */
+/* @Media screen 520 ends from here */
